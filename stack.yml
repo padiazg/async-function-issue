@@ -7,11 +7,8 @@ functions:
     lang: node
     handler: ./function
     image: function:latest
-    read_timeout: 10
-    write_timeout: 10
-    ack_wait: 10
-    exec_timeout: 11
-    # read_timeout: "10s"
-    # write_timeout: "10s"
-    # ack_wait: "10s"
-    # exec_timeout: "11s"
+    environment:
+      read_timeout: "10s"
+      write_timeout: "10s"
+      ack_wait: "10s"
+      exec_timeout: "11s"
