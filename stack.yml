@@ -1,0 +1,17 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  function:
+    lang: node
+    handler: ./function
+    image: function:latest
+    read_timeout: 10
+    write_timeout: 10
+    ack_wait: 10
+    exec_timeout: 11
+    # read_timeout: "10s"
+    # write_timeout: "10s"
+    # ack_wait: "10s"
+    # exec_timeout: "11s"
