@@ -14,7 +14,7 @@ $ npm i
 $ node .
 ```
 # Test
-The IP of my machine at running the test was `192.168.1.112`, so you should
+The IP of my machine at running the test was `192.168.1.112`, so you should change it accordingly
 
 The function receives as it's parameter the timeout that should wait before sending the response, if not specified a default value of 2000 is asumed.
 
